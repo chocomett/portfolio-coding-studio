@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-white">
+    <nav id="nav" class="navbar navbar-expand-lg bg-white fixed-top">
         <div class="container">
             <a class="navbar-brand fs-4 fw-bold" href="#">John Doe</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -20,16 +20,16 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-auto">
-                    <a class="nav-link" href="#">Home</a>
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="#home">Home</a>
+                    <a class="nav-link" href="#about">About</a>
                     <a class="nav-link" href="#">Project</a>
                     <a class="nav-link" href="#">Contact</a>
                 </div>
             </div>
         </div>
     </nav>
-    <section id="home" class="home container py-5">
-        <div class="row d-flex align-items-center">
+    <section id="home" class="home container py-5 mt-5">
+        <div class="row d-flex align-items-center mb-5">
             <div class="col-8">
                 <h3 class="fw-semibold m-0">Hi! I am</h3>
                 <h1 class="fw-bold">John Doe</h1>
@@ -40,6 +40,55 @@
                 <img src="images/potrait.png" alt="potrait">
             </div>
         </div>
+    </section>
+    <section id="about" class="about container-fluid py-5">
+        <div class="d-flex justify-content-center align-items-center">
+            <div class="container">
+                <h2 class="fw-bold text-center">About</h2>
+                <h5 class="text-center px-5 text-gray">Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Dolorem recusandae
+                    mollitia architecto totam saepe illo officia accusamus quae maximesapiente, amet cum numquam? Iste
+                    aperiam fugit veniam, pariatur, sed soluta exercitationem dolore eligendi voluptas nobis, corrupti
+                    illo quam tenetur ex.</h5>
+                <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, possimus.</p>
+            </div>
+        </div>
+    </section>
+    <section id="exp" class="exp container py-5">
+        <h2 class="fw-bold text-center">Expirience</h2>
+        <div class="exps">
+            <div class="exp-item">
+                <div class="exp-item-header d-flex justify-content-between align-items-center">
+                    <div>
+                        <h5>Intern Frontend Developer</h5>
+                        <p>Fiesto Informatika Indonesia (maret - agustus 2023)</p>
+                    </div>
+                    <button class="btn button" onclick="toggleDetail(event)">More Info</button>
+                </div>
+                <p class="exp-item-detail">During my internship at Fiesto Informatika Indonesia, I focused on front-end
+                    development by
+                    slicing designs from Figma into responsive websites using HTML, CSS, and Bootstrap. I also
+                    gained foundational experience in back-end development with PHP and content management
+                    through a CMS.</p>
+            </div>
+            <div class="exp-item">
+                <div class="exp-item-header d-flex justify-content-between align-items-center">
+                    <div>
+                        <h5>Bootcamp Students</h5>
+                        <p>Lumoshive Academy (maret - agustus 2023)</p>
+                    </div>
+                    <button class="btn button" onclick="toggleDetail(event)">More Info</button>
+                </div>
+                <p class="exp-item-detail">During my internship at Fiesto Informatika Indonesia, I focused on front-end
+                    development by
+                    slicing designs from Figma into responsive websites using HTML, CSS, and Bootstrap. I also
+                    gained foundational experience in back-end development with PHP and content management
+                    through a CMS.</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact container py-5">
+        <h2 class="fw-bold text-center">Contact</h2>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
